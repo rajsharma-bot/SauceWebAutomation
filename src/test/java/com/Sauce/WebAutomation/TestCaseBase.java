@@ -14,6 +14,7 @@ public class TestCaseBase {
 		driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/");
+		
 	}
 	
 	public void teardown() {

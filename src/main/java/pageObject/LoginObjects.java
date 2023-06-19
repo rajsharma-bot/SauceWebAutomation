@@ -28,5 +28,26 @@ public class LoginObjects {
 		clickLogin(driver);
 
 	}
+	
+	public void LoginWithUsername(String username) {
+		userName(username);
+		clickLogin(driver);
+	}
+	
+	public void LoginWithPassword(String password) {
+		password(password);
+		clickLogin(driver);
+	}
+	
+	public boolean errorIsDisplayed() {
+		return driver.findElement(LoginPageObject.txt_error).isDisplayed();
+	}
+	
+	public boolean username_required() {
+		return driver.findElement(LoginPageObject.txt_error).isDisplayed();
+	}
 
+	public boolean password_required() {
+		return driver.findElement(LoginPageObject.txt_error).isDisplayed();
+	}
 }
