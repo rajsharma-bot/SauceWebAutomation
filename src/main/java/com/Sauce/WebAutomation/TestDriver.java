@@ -14,6 +14,7 @@ public class TestDriver {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String path = System.getProperty("user.dir");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -21,7 +22,7 @@ public class TestDriver {
 		System.out.println(driver.getTitle());
 		String text= driver.getPageSource();
 		try {
-			 FileWriter writer = new FileWriter("C:\\Users\\rajsh\\eclipse-workspace\\febTestOmeter\\SauceWebAutomation\\output.txt");
+			 FileWriter writer = new FileWriter(path +"\\Files\\output.txt");
 			 writer.write(text);
 			 writer.close();
 			 System.out.println("Text is saved");
