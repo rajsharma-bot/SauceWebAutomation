@@ -1,21 +1,20 @@
 package com.Sauce.WebAutomation;
 
 
+import org.testng.annotations.Test;
 
 import pageObject.DashboardObjects;
 import pageObject.LoginObjects;
 
-public class Login extends TestCaseBase {
+public class LoginTestCase extends TestCaseBase {
 
-	// Case to verify whether user is able to login Successfully or not
 	
+	
+	@Test (description = "Login with Valid id and password")
 	public void verify_login_page() {
 
-		setup();
 		String product = "Swag Labs";
-
 //		String cn = new Object() {}.getClass().getEnclosingMethod().getName();      -- to get method name 
-
 		LoginObjects lg = new LoginObjects(driver);
 		FileSaver fn = new FileSaver();
 		DashboardObjects da = new DashboardObjects(driver);
@@ -25,13 +24,11 @@ public class Login extends TestCaseBase {
 		} else {
 			System.out.println("Unable to login");
 		}
-		teardown();
-
 	}
 
-	// Case to verify validation on passing incorrect username and password
+	
+	@Test (description = "Verifying validation on incorret username and password")
 	public void verify_login_error() {
-		setup();
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
 		lg.login("ABC", "admin");
@@ -43,12 +40,12 @@ public class Login extends TestCaseBase {
 				System.out.println("Login Successfull");
 			}
 		}
-		teardown();
+		
 	}
 
-	// Case to verify validation on if only username is passed
+
+	@Test (description = "Verify validation on if only username is passed" )
 	public void usernameIsrequired() {
-		setup();
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
 		lg.LoginWithUsername("abc");
@@ -60,12 +57,12 @@ public class Login extends TestCaseBase {
 				System.out.println("Login Successfull");
 			}
 		}
-		teardown();
 	}
 
-	//// Case to verify validation if only password is passed
+	
+	@Test(description = "Verify validation if only password is passed")
 	public void PasswordIsrequired() {
-		setup();
+		
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
 		lg.LoginWithUsername("abc");
@@ -77,16 +74,7 @@ public class Login extends TestCaseBase {
 				System.out.println("Login Successfull");
 			}
 		}
-		teardown();
+		
 	}
 
-	public static void main(String[] args) {
-		Login l = new Login();
-
-		l.verify_login_error();
-		l.usernameIsrequired();
-		l.PasswordIsrequired();
-		l.verify_login_page();
-
-	}
 }
