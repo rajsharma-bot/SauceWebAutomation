@@ -87,6 +87,10 @@ public class DashboardObjects {
 		return d;
 	}
 	
+	public void logOut() {
+		driver.findElement(DashboardPageObject.logout_sidebar).click();
+	}
+	
 //	public int addToCart_2() {
 //		List<WebElement> elements =driver.findElements(DashboardPageObject.btn_addCart);
 //		return elements.size();

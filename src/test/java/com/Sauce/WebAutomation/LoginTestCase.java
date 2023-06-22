@@ -1,5 +1,6 @@
 package com.Sauce.WebAutomation;
 
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
@@ -8,9 +9,7 @@ import pageObject.LoginObjects;
 
 public class LoginTestCase extends TestCaseBase {
 
-	
-	
-	@Test (description = "Login with Valid id and password")
+	@Test(description = "Login with Valid id and password")
 	public void verify_login_page() {
 
 		String product = "Swag Labs";
@@ -26,8 +25,7 @@ public class LoginTestCase extends TestCaseBase {
 		}
 	}
 
-	
-	@Test (description = "Verifying validation on incorret username and password")
+	@Test(description = "Verifying validation on incorret username and password")
 	public void verify_login_error() {
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
@@ -40,11 +38,10 @@ public class LoginTestCase extends TestCaseBase {
 				System.out.println("Login Successfull");
 			}
 		}
-		
+
 	}
 
-
-	@Test (description = "Verify validation on if only username is passed" )
+	@Test(description = "Verify validation on if only username is passed")
 	public void usernameIsrequired() {
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
@@ -59,10 +56,9 @@ public class LoginTestCase extends TestCaseBase {
 		}
 	}
 
-	
 	@Test(description = "Verify validation if only password is passed")
 	public void PasswordIsrequired() {
-		
+
 		String product = "Swag Labs";
 		LoginObjects lg = new LoginObjects(driver);
 		lg.LoginWithUsername("abc");
@@ -74,7 +70,18 @@ public class LoginTestCase extends TestCaseBase {
 				System.out.println("Login Successfull");
 			}
 		}
-		
+
 	}
 
+	@Test(description = "Verify to check whether user is able to logout")
+	public void LogOut() throws InterruptedException {
+		LoginObjects lg = new LoginObjects(driver);
+		DashboardObjects dc= new DashboardObjects(driver);
+		lg.login("standard_user", "secret_sauce");
+		dc.clickMenu();
+		assertEquals(dc.menuIsDisplayed(), true);
+		Thread.sleep(3000);
+		dc.logOut();
+		
+	}
 }
