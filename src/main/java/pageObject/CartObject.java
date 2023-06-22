@@ -15,5 +15,8 @@ public class CartObject {
 	
 	public boolean cartpageIsDispay() {
 		return driver.findElement(CartPageObject.pageLand).isDisplayed();	}
-
+	
+	public void continueShopping() {
+		driver.findElement(CartPageObject.continueShopping).click();
+	}
 }
