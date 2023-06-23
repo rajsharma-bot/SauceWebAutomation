@@ -3,13 +3,41 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.Sauce.WebAutomation.CartPageTestCase">
+        <methods>
+          <include name="validatingwithoutFirsyName"/>
+          <include name="setup"/>
+          <include name="checkoutForm"/>
+          <include name="validatingFormPage"/>
+          <include name="validatingwithoutLastName"/>
+          <include name="teardown"/>
+          <include name="FormFilling"/>
+          <include name="checkOut"/>
+          <include name="validatingwithoutZipcode"/>
+        </methods>
+      </class> <!-- com.Sauce.WebAutomation.CartPageTestCase -->
       <class name="com.Sauce.WebAutomation.LoginTestCase">
         <methods>
           <include name="setup"/>
+          <include name="verify_login_page"/>
+          <include name="verify_login_error"/>
           <include name="teardown"/>
           <include name="LogOut"/>
+          <include name="usernameIsrequired"/>
+          <include name="PasswordIsrequired"/>
         </methods>
       </class> <!-- com.Sauce.WebAutomation.LoginTestCase -->
+      <class name="com.Sauce.WebAutomation.DashboardTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="addToCart"/>
+          <include name="addToCartMultipleIteam"/>
+          <include name="aboutMe"/>
+          <include name="teardown"/>
+          <include name="continueShopping"/>
+          <include name="getMenu"/>
+        </methods>
+      </class> <!-- com.Sauce.WebAutomation.DashboardTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

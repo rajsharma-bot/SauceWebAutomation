@@ -5,6 +5,7 @@
     <classes>
       <class name="com.Sauce.WebAutomation.DashboardTestCase"/>
       <class name="com.Sauce.WebAutomation.LoginTestCase"/>
+      <class name="com.Sauce.WebAutomation.CartPageTestCase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
