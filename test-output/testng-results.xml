@@ -1,135 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T22:28:22 IST" name="Suite" finished-at="2023-06-22T22:29:15 IST" duration-ms="52437">
+  <suite started-at="2023-06-23T16:29:38 IST" name="Default suite" finished-at="2023-06-23T16:29:49 IST" duration-ms="11664">
     <groups>
     </groups>
-    <test started-at="2023-06-22T22:28:22 IST" name="Test" finished-at="2023-06-22T22:29:15 IST" duration-ms="52437">
+    <test started-at="2023-06-23T16:29:38 IST" name="Default test" finished-at="2023-06-23T16:29:49 IST" duration-ms="11664">
       <class name="com.Sauce.WebAutomation.DashboardTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:22 IST" name="setup" finished-at="2023-06-22T22:28:25 IST" duration-ms="2666" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@483f6d77]" started-at="2023-06-23T16:29:38 IST" name="setup" finished-at="2023-06-23T16:29:43 IST" duration-ms="4954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="aboutMe()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:25 IST" name="aboutMe" description="On click about menu and getting text from about page" finished-at="2023-06-22T22:28:32 IST" duration-ms="7155" status="PASS">
+        <test-method signature="DropDown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@483f6d77]" started-at="2023-06-23T16:29:43 IST" name="DropDown" description="Using Price low to high filer and getting " finished-at="2023-06-23T16:29:49 IST" duration-ms="6509" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aboutMe -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:32 IST" name="teardown" finished-at="2023-06-22T22:28:33 IST" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:33 IST" name="setup" finished-at="2023-06-22T22:28:35 IST" duration-ms="2528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addToCart()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:35 IST" name="addToCart" description="Adding item in cart" finished-at="2023-06-22T22:28:39 IST" duration-ms="3475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:39 IST" name="teardown" finished-at="2023-06-22T22:28:39 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:39 IST" name="setup" finished-at="2023-06-22T22:28:41 IST" duration-ms="2075" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addToCartMultipleIteam()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:41 IST" name="addToCartMultipleIteam" description="Adding multiple item in add" finished-at="2023-06-22T22:28:44 IST" duration-ms="3500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartMultipleIteam -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:44 IST" name="teardown" finished-at="2023-06-22T22:28:44 IST" duration-ms="192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:44 IST" name="setup" finished-at="2023-06-22T22:28:50 IST" duration-ms="5085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="continueShopping()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:50 IST" name="continueShopping" description="Verify whether use is able to go back to Products page " finished-at="2023-06-22T22:28:56 IST" duration-ms="6600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- continueShopping -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:56 IST" name="teardown" finished-at="2023-06-22T22:28:56 IST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:56 IST" name="setup" finished-at="2023-06-22T22:28:58 IST" duration-ms="1760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getMenu()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:58 IST" name="getMenu" description="Click on menu and checking whether menu is displayed or not" finished-at="2023-06-22T22:28:59 IST" duration-ms="424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getMenu -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@4bb33f74]" started-at="2023-06-22T22:28:59 IST" name="teardown" finished-at="2023-06-22T22:28:59 IST" duration-ms="173" status="PASS">
+        </test-method> <!-- DropDown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.DashboardTestCase@483f6d77]" started-at="2023-06-23T16:29:49 IST" name="teardown" finished-at="2023-06-23T16:29:49 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.Sauce.WebAutomation.DashboardTestCase -->
-      <class name="com.Sauce.WebAutomation.LoginTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:28:59 IST" name="setup" finished-at="2023-06-22T22:29:02 IST" duration-ms="2889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LogOut()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:02 IST" name="LogOut" description="Verify to check whether user is able to logout" finished-at="2023-06-22T22:29:05 IST" duration-ms="3433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogOut -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:05 IST" name="teardown" finished-at="2023-06-22T22:29:05 IST" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:05 IST" name="setup" finished-at="2023-06-22T22:29:07 IST" duration-ms="1968" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="PasswordIsrequired()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:07 IST" name="PasswordIsrequired" description="Verify validation if only password is passed" finished-at="2023-06-22T22:29:07 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PasswordIsrequired -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:07 IST" name="teardown" finished-at="2023-06-22T22:29:08 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:08 IST" name="setup" finished-at="2023-06-22T22:29:10 IST" duration-ms="2161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="usernameIsrequired()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:10 IST" name="usernameIsrequired" description="Verify validation on if only username is passed" finished-at="2023-06-22T22:29:10 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usernameIsrequired -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:10 IST" name="teardown" finished-at="2023-06-22T22:29:10 IST" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:10 IST" name="setup" finished-at="2023-06-22T22:29:12 IST" duration-ms="1678" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_login_error()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:12 IST" name="verify_login_error" description="Verifying validation on incorret username and password" finished-at="2023-06-22T22:29:12 IST" duration-ms="253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login_error -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:12 IST" name="teardown" finished-at="2023-06-22T22:29:12 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:12 IST" name="setup" finished-at="2023-06-22T22:29:14 IST" duration-ms="2235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_login_page()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:14 IST" name="verify_login_page" description="Login with Valid id and password" finished-at="2023-06-22T22:29:15 IST" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login_page -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Sauce.WebAutomation.LoginTestCase@759d26fb]" started-at="2023-06-22T22:29:15 IST" name="teardown" finished-at="2023-06-22T22:29:15 IST" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.Sauce.WebAutomation.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
