@@ -26,5 +26,11 @@ public class DashboardPageObject {
 	public static By btn_cart= By.xpath("//a[@class='shopping_cart_link']");
 	public static By cart_label= By.xpath("//span[@class='title']");
 	public static By productPage =By.xpath("//span[@class='title']");
+	public static By DDL =By.xpath("//select[@class='product_sort_container']");
+	public static By byValue =By.xpath("//option[@value='lohi']");
+	public static By lowToHigh =By.xpath("//div[@class='pricebar']//div[1]");
+	
+	////div[@class='pricebar']//div[1]
+	
 
 }

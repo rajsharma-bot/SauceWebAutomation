@@ -1,9 +1,14 @@
 package pageObject;
 
+import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class DashboardObjects {
 
@@ -71,30 +76,38 @@ public class DashboardObjects {
 	public void cart() {
 		driver.findElement(DashboardPageObject.btn_cart).click();
 	}
-	
+
 //	public boolean productVerify() {
 //		return driver.findElement(DashboardPageObject.productPage).isDisplayed();
 //	}
-	
-	
+
 	public boolean productVerify() {
-		boolean d= driver.findElement(DashboardPageObject.productPage).isDisplayed();
-		if(d == true) {
+		boolean d = driver.findElement(DashboardPageObject.productPage).isDisplayed();
+		if (d == true) {
 			System.out.println("Landed back to product page");
-		}else {
+		} else {
 			System.out.println("Landed on wrong page");
 		}
 		return d;
 	}
-	
+
 	public void logOut() {
 		driver.findElement(DashboardPageObject.logout_sidebar).click();
 	}
-	
-//	public int addToCart_2() {
-//		List<WebElement> elements =driver.findElements(DashboardPageObject.btn_addCart);
-//		return elements.size();
-//	
-//	}
 
+	public void ddByValue() {
+		driver.findElement(DashboardPageObject.byValue).click();
+	}
+
+	public void lowToHigh() {
+		List<WebElement> ListOfElement = driver.findElements(DashboardPageObject.lowToHigh);
+		for (WebElement ele : ListOfElement) {
+			System.out.println(ele.getText());
+		}
+
+	}
+	
+	public boolean lowToHighIsSelected() {
+		return driver.findElement(DashboardPageObject.byValue).isDisplayed();
+	}
 }

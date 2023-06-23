@@ -2,10 +2,14 @@ package com.Sauce.WebAutomation;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
+import com.Sauce.WebAutomation.helper.select.DropDownHelper;
 
 import pageObject.CartObject;
 import pageObject.DashboardObjects;
+import pageObject.DashboardPageObject;
 import pageObject.LoginObjects;
 
 public class DashboardTestCase extends TestCaseBase {
@@ -79,7 +83,21 @@ public class DashboardTestCase extends TestCaseBase {
 		Thread.sleep(3000);
 		cpo.continueShopping();
 		assertEquals(da.productVerify(), true, "Successfully landed back to product page");
-		
+
+	}
+
+	@Test(description = "Using Price low to high filer and getting ")
+	public void DropDown() throws InterruptedException {
+		LoginObjects lg = new LoginObjects(driver);
+		DashboardObjects da = new DashboardObjects(driver);
+		CartObject cpo = new CartObject(driver);
+		DropDownHelper ddl = new DropDownHelper(driver);
+		lg.login("standard_user", "secret_sauce");
+		Thread.sleep(3000);
+		da.ddByValue();
+		da.lowToHigh();
+		Thread.sleep(3000);
+		assertEquals(da.lowToHighIsSelected(), true);
 	}
 
 }
